@@ -17,8 +17,6 @@ const categories: number[] = [
 ];
 const data: number[] = [695396, 867215, 820072, 690322, 581228, 812462, 854535, 521250, 815516, 851173, 862075, 825997];
 
-const a = 5;
-
 const App: React.FC = () => {
   return (
     <>
