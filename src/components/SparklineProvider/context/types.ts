@@ -1,0 +1,5 @@
+export enum types {
+    SEND_PEAKS = 'SEND_PEAKS',
+    DELETE_PEAKS = 'DELETE_PEAKS',
+    CHANGE_PEAKS = 'CHANGE_PEAKS',
+}
