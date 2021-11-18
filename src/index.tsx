@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { SparklineProvider } from './components/SparklineProvider';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <SparklineProvider>
+      <App />
+    </SparklineProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
