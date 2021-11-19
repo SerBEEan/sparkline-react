@@ -65,6 +65,7 @@
     "@types/numeral": "2.0.2",
     "@visx/xychart": "2.2.2",
     "bem-cn": "3.0.1",
+    "chromatic": "6.0.6",
     "moment": "2.29.1",
     "numeral": "2.0.6",
     "react-spring": "9.3.0",
