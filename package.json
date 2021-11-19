@@ -20,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "storybook:build": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": [
@@ -29,7 +31,17 @@
     ],
     "rules": {
       "react-hooks/exhaustive-deps": "off"
-    }
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
   },
   "browserslist": {
     "production": [
@@ -44,6 +56,12 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-actions": "6.3.12",
+    "@storybook/addon-essentials": "6.3.12",
+    "@storybook/addon-links": "6.3.12",
+    "@storybook/node-logger": "6.3.12",
+    "@storybook/preset-create-react-app": "3.2.0",
+    "@storybook/react": "6.3.12",
     "@types/numeral": "2.0.2",
     "@visx/xychart": "2.2.2",
     "bem-cn": "3.0.1",
