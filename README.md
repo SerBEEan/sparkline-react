@@ -67,3 +67,7 @@ enum SparklineSyncModes {
     min = 'min',                    // только по нижней
 }
 ```
+
+## Stack
+
+React, TS, Sass, @visx/xychart, storybook
